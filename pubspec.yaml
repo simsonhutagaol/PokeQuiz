@@ -1,0 +1,55 @@
+name: pokemon_quiz
+description: "A new Flutter project."
+
+# The following line prevents the package from being accidentally published to
+# pub.dev using `flutter pub publish`. This is preferred for private packages.
+publish_to: none
+
+# Versi aplikasi dan build number
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.5.3 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # Menambahkan Cupertino Icons untuk tampilan iOS
+  cupertino_icons: ^1.0.8
+
+  # HTTP untuk melakukan request API
+  http: ^0.13.4
+
+  # Library untuk menampilkan GIF
+  flutter_gif: ^0.0.4
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  # Lints untuk rekomendasi praktik terbaik dalam pengkodean
+  flutter_lints: ^4.0.0
+
+  # Flutter launcher icons untuk mengganti ikon aplikasi
+  flutter_launcher_icons: ^0.13.1
+
+flutter_icons:
+  android: true
+  ios: true
+  image_path: "assets/icon/icon.png"
+
+flutter:
+  # Memastikan bahwa font Material Icons disertakan
+  uses-material-design: true
+
+  # Daftar assets untuk aplikasi
+  assets:
+    - assets/pokemon2.gif
+    - assets/bg_pokemon1.jpg
+
+  # Font kustom
+  fonts:
+    - family: RobotoMono
+      fonts:
+        - asset: fonts/RobotoMono-Regular.ttf
